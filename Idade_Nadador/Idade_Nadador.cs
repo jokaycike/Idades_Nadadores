@@ -10,11 +10,9 @@ namespace Idade_Nadador
     {
         static void Main(string[] args)
         {
-            do
-            {
-                Denovo();
-                Console.WriteLine("Deseja verificar a idade de outro nadador? (Digite 's' para sim, ou qualquer outra tecla para sair)");
-            } while (Console.ReadLine().ToLower() == "s");
+    
+            Denovo();
+               
         }
         public static void Denovo()
         {
@@ -59,7 +57,7 @@ namespace Idade_Nadador
                 Console.ResetColor();
             }
 
-
+            Denovo();
         }
     }
 }
